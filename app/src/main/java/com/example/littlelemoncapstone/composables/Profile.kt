@@ -52,9 +52,9 @@ fun Profile(navController: NavHostController) {
     val context = LocalContext.current
     val sharedPreferences = context.getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
 
-    val firstName = sharedPreferences.getString("firstName", "") ?: "Krystyna"
-    val lastName = sharedPreferences.getString("lastName", "") ?: "Sajak"
-    val email = sharedPreferences.getString("email", "") ?: "krysia.sajak@interia.pl"
+    val firstName = sharedPreferences.getString("firstName", "") ?: "Felix"
+    val lastName = sharedPreferences.getString("lastName", "") ?: "Daniels"
+    val email = sharedPreferences.getString("email", "") ?: "Felix@yahoo.com"
 
     Surface(modifier = Modifier.fillMaxSize()) {
         Column(
